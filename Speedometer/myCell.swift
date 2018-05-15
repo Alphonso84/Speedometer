@@ -11,6 +11,7 @@ import UIKit
 
 class myCell: UITableViewCell {
     
+    @IBOutlet weak var dataLabel: UILabel!
     
     
     

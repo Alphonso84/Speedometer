@@ -12,6 +12,8 @@ import CoreLocation
 
 class SpeedView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var data = ["N", "15.5 Miles", "3:22AM"]
+    
     @IBOutlet weak var tableView: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -22,9 +24,9 @@ class SpeedView: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! myCell
         
-        cell.detailTextLabel?.text = "TEST"
-        cell.detailTextLabel?.textColor = UIColor.white
-        cell.detailTextLabel?.font = UIFont.boldSystemFont(ofSize: 24)
+         cell.dataLabel.text = data[indexPath.row]
+        cell.dataLabel.textColor = UIColor.white
+        cell.dataLabel.font = UIFont.boldSystemFont(ofSize: 70)
         
         return cell
     }

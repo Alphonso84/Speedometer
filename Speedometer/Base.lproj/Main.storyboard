@@ -37,7 +37,9 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bQj-4g-vk5">
                                 <rect key="frame" x="0.0" y="505" width="375" height="307"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" rowHeight="99" id="nwY-ld-7Xy" customClass="myCell" customModule="Speedometer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="99"/>
@@ -48,11 +50,13 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-tY-1Nz">
                                                     <rect key="frame" x="15" y="11" width="345" height="77"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="Oxh-tY-1Nz" firstAttribute="bottom" secondItem="eqM-gt-wmm" secondAttribute="bottomMargin" id="HmI-Mv-IKc"/>
                                                 <constraint firstItem="Oxh-tY-1Nz" firstAttribute="centerY" secondItem="eqM-gt-wmm" secondAttribute="centerY" id="OUn-Cv-O47"/>
@@ -60,6 +64,10 @@
                                                 <constraint firstItem="Oxh-tY-1Nz" firstAttribute="centerX" secondItem="eqM-gt-wmm" secondAttribute="centerX" id="ypc-N1-hFG"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataLabel" destination="Oxh-tY-1Nz" id="zoS-7x-PfV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
