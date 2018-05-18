@@ -13,6 +13,7 @@
 		894EFD5420AABD290003079E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894EFD5220AABD290003079E /* LaunchScreen.storyboard */; };
 		894EFD5C20AABDD20003079E /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894EFD5B20AABDD20003079E /* SpeedViewController.swift */; };
 		89CA5BAA20AAE63D0007D887 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CA5BA920AAE63D0007D887 /* myCell.swift */; };
+		89FE153020AAEDD8007F4DAE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE152F20AAEDD8007F4DAE /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		894EFD5520AABD290003079E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		894EFD5B20AABDD20003079E /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 		89CA5BA920AAE63D0007D887 /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		89FE152F20AAEDD8007F4DAE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,31 @@
 			isa = PBXGroup;
 			children = (
 				894EFD4920AABD240003079E /* AppDelegate.swift */,
-				894EFD5B20AABDD20003079E /* SpeedViewController.swift */,
-				89CA5BA920AAE63D0007D887 /* myCell.swift */,
+				89FE152E20AAEDB5007F4DAE /* Model */,
+				89FE152D20AAED85007F4DAE /* View */,
 				894EFD4D20AABD240003079E /* Main.storyboard */,
 				894EFD5020AABD290003079E /* Assets.xcassets */,
 				894EFD5220AABD290003079E /* LaunchScreen.storyboard */,
 				894EFD5520AABD290003079E /* Info.plist */,
 			);
 			path = Speedometer;
+			sourceTree = "<group>";
+		};
+		89FE152D20AAED85007F4DAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89CA5BA920AAE63D0007D887 /* myCell.swift */,
+				894EFD5B20AABDD20003079E /* SpeedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89FE152E20AAEDB5007F4DAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89FE152F20AAEDD8007F4DAE /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 				894EFD5C20AABDD20003079E /* SpeedViewController.swift in Sources */,
 				89CA5BAA20AAE63D0007D887 /* myCell.swift in Sources */,
 				894EFD4A20AABD240003079E /* AppDelegate.swift in Sources */,
+				89FE153020AAEDD8007F4DAE /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
