@@ -13,41 +13,52 @@ import CoreLocation
 class SpeedView: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var speedLabel: UILabel!
-    var manager = CLLocationManager()
+    let manager = CLLocationManager()
     var last:CLLocation?
-     
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations[0]
+        speedLabel.text = "\(Double(location.speed))"
+        print(location.speed)
+    }
     
 //    required init?(coder aDecoder: NSCoder) {
 //        fatalError("init(coder:) has not been implemented")
 //    }
     
     
-    func processLocation(_ current:CLLocation) {
-        guard last != nil else {
-            last = current
-            return
-        }
-        var speed = current.speed
-        if (speed > 0) {
-            print(speed)
-            speedLabel.text = "\(speed)"
-            // or whatever
-        } else {
-            speed = last!.distance(from: current) / (current.timestamp.timeIntervalSince(last!.timestamp))
-            speedLabel.text = "\(speed)"
-            print(speed)
-            
-        }
-        last = current
-    }
-    func locationManager(_ manager: CLLocationManager,
-                         didUpdateLocations locations: [CLLocation]) {
-        for location in locations {
-            processLocation(location)
-        }
-    }
+//    func processLocation(_ current:CLLocation) {
+//        guard last != nil else {
+//            last = current
+//            return
+//        }
+//        var speed = current.speed
+//        if (speed > 0) {
+//            print(speed)
+//            speedLabel.text = "\(speed)"
+//            // or whatever
+//        } else {
+//            speed = last!.distance(from: current) / (current.timestamp.timeIntervalSince(last!.timestamp))
+//            speedLabel.text = "\(speed)"
+//            print(speed)
+//
+//        }
+//        last = current
+//    }
+//    func locationManager(_ manager: CLLocationManager,
+//                         didUpdateLocations locations: [CLLocation]) {
+//        for location in locations {
+//            processLocation(location)
+//        }
+//    }
     
     
+    @IBAction func updateSpeed(_ sender: Any) {
+        manager.startUpdatingLocation()
+        manager.startUpdatingHeading()
+        speedLabel.text = "\(last?.speed)"
+        
+    }
     
     var data = ["N", "15.5 Miles", "3:22AM"]
     
@@ -84,6 +95,7 @@ class SpeedView: UIViewController, UITableViewDataSource, UITableViewDelegate, C
         
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         manager.startUpdatingHeading()
         backgroundImage.image = #imageLiteral(resourceName: "Background")
