@@ -15,9 +15,9 @@ class SpeedView: UIViewController, UITableViewDataSource, UITableViewDelegate, C
     var last:CLLocation?
      
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
     
     
     func processLocation(_ current:CLLocation) {
