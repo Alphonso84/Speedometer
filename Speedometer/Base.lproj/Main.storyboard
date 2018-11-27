@@ -22,8 +22,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4w-uM-Xmg">
-                                <rect key="frame" x="63" y="146" width="249" height="268"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="162"/>
+                                <rect key="frame" x="0.0" y="146" width="375" height="268"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="145"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -85,7 +85,7 @@
                             <constraint firstItem="bQj-4g-vk5" firstAttribute="leading" secondItem="7hk-H2-4fV" secondAttribute="leading" id="7SE-t9-YLB"/>
                             <constraint firstItem="O4w-uM-Xmg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="86V-EO-hlm"/>
                             <constraint firstItem="CLh-bz-EW3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="DHE-D5-yNG"/>
-                            <constraint firstItem="O4w-uM-Xmg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="PUk-Vv-7eF"/>
+                            <constraint firstItem="O4w-uM-Xmg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PUk-Vv-7eF"/>
                             <constraint firstItem="7hk-H2-4fV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qan-TV-m9x"/>
                             <constraint firstItem="CLh-bz-EW3" firstAttribute="top" secondItem="O4w-uM-Xmg" secondAttribute="bottom" constant="8" symbolic="YES" id="SE9-Yz-Dfb"/>
                             <constraint firstItem="CLh-bz-EW3" firstAttribute="centerX" secondItem="O4w-uM-Xmg" secondAttribute="centerX" id="T8B-DD-TJp"/>
