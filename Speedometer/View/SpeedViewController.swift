@@ -18,7 +18,8 @@ class SpeedView: UIViewController, UITableViewDataSource, UITableViewDelegate, C
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
-        speedLabel.text = "\(location.speed as Double)"
+        let MPH = (location.speed * 3.3) * 60 * 60 / 5280
+        speedLabel.text = "\(MPH as Double)"
         print(location.speed)
     }
     
